@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>DPS</projectKey>
+    <exportDate>2025-10-22 17:18:59 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="268465107" key="DPS-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>rafael miguez</createdBy>
+            <createdOn>2025-10-22 16:45:30 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro deseja criar conta]]></name>
+            <objective><![CDATA[Verificar funcionalidade de criar conta]]></objective>
+            <owner>712020:e4acae9a-9536-4f3f-907b-48558a7cc7fd</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given usuário está na tela principal do site
+
+And não tem cadastro
+
+When clicar em “criar conta”
+
+Then acessar página de criação de conta]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="268465572" key="DPS-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>rafael miguez</createdBy>
+            <createdOn>2025-10-22 16:52:09 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário deseja acessar página de redefinição de senha]]></name>
+            <owner>712020:e4acae9a-9536-4f3f-907b-48558a7cc7fd</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given usuário já tem conta no site
+
+And esqueceu a senha
+
+When clicar em “esqueci a senha”
+
+Then será direcionado para pagina de recuperação de senha]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
